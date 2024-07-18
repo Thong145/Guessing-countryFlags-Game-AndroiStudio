@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/Txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="Đoán tên quốc kỳ"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:textSize="50dp"
+            tools:ignore="RtlCompat"
+            android:fontFamily="sans-serif-medium"/>
+
+        <Button
+            android:id="@+id/BtnPlay"
+            android:layout_width="330dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/Txt1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/play_button"
+
+            android:textColor="#eee"
+            android:textSize="37dp" />
+
+        <Button
+            android:id="@+id/BtnHighScore"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/spinner_difficulty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Điểm cao"
+            android:background="@drawable/custom_button"
+            android:textSize="37dp"
+            android:textColor="#eee"/>
+
+        <Button
+            android:id="@+id/BtnHuongdan"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/BtnHighScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Hướng dẫn"
+            android:background="@drawable/custom_button"
+            android:textSize="37dp"
+            android:textColor="#eee"/>
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/BtnPlay"
+            android:layout_below="@+id/BtnPlay"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#ffffff"
+            android:textColor="#eee"
+            android:textSize="37dp"
+            android:layout_alignLeft="@+id/BtnPlay" />
+
+        <Spinner
+            android:id="@+id/spinner_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/BtnPlay"
+            android:layout_below="@+id/spinner_category"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#ffffff"
+            android:textColor="#eee"
+            android:textSize="37dp"
+            android:layout_alignLeft="@+id/BtnPlay" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
